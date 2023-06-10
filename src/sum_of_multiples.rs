@@ -61,3 +61,18 @@ fn calc_energy(limit: i32, factors: &[i32]) -> i32 {
     multiples.dedup();
     multiples.iter().sum()
 }
+
+#[test]
+fn no_multiples_within_limit() {
+    assert_eq!(0, calc_energy(1, &[3, 5]))
+}
+
+#[test]
+fn one_factor_has_multiples_within_limit() {
+    assert_eq!(3, calc_energy(4, &[3, 5]))
+}
+
+#[test]
+fn each_multiple_is_only_counted_once() {
+    assert_eq!(2318, calc_energy(100, &[3, 5]))
+}
