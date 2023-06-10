@@ -76,3 +76,8 @@ fn one_factor_has_multiples_within_limit() {
 fn each_multiple_is_only_counted_once() {
     assert_eq!(2318, calc_energy(100, &[3, 5]))
 }
+
+#[test]
+fn the_only_multiple_of_0_is_0() {
+    assert_eq!(0, calc_energy(1, &[0]))
+}
