@@ -4,5 +4,6 @@ mod challenge_3;
 mod reverse_string;
 mod giga_second;
 mod grains;
+mod raindrops;
 
 fn main() {}
