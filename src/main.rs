@@ -6,5 +6,6 @@ mod giga_second;
 mod grains;
 mod raindrops;
 mod sum_of_multiples;
+mod armstrong;
 
 fn main() {}
