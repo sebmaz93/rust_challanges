@@ -8,5 +8,6 @@ mod raindrops;
 mod sum_of_multiples;
 mod armstrong;
 mod leap_year;
+mod proverb;
 
 fn main() {}
